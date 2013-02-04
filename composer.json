@@ -4,6 +4,8 @@
     "description":  "Wrapper for HighCharts js charting lib",
     "keywords":     ["highcharts", "charts"],
     "homepage":     "https://github.com/petesiss/phphc",
+    "license":      "MIT",
+    "minimum-stability": "dev",
     "authors":      [
         {
             "name":     "Pete Sisson",
@@ -15,6 +17,5 @@
     },
     "autoload":     {
         "psr-0": { "Petesiss\\PhpHc\\": "src/" }
-    },
-    "minimum-stability": "dev"
+    }
 }
