@@ -49,7 +49,7 @@ Use composer to install, and make use of the autoload file composer will generat
 php composer.phar update petesiss/phphc
 ```
 
-###Require composers generated autoload file
+####Require composers generated autoload file
 ```php
 <?php
 require 'vendor/autoload.php';
