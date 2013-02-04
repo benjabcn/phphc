@@ -33,7 +33,7 @@ The script block for the chart js can be easily rendered using the renderer as i
 
 ##Installation
 
-Use composer to install and the autoloading is taken care of.
+Use composer to install, and make use of the autoload file composer will generate.
 
 ####Add to your composer.json
 ```js
@@ -45,9 +45,15 @@ Use composer to install and the autoloading is taken care of.
 ```
 
 ####Then update your project dependencies
-
 ```bash
 php composer.phar update petesiss/phphc
+```
+
+###Require composers generated autoload file
+```php
+<?php
+require 'vendor/autoload.php';
+
 ```
 
 Alternatively the lib follows the PSR-0 convention so you can clone the repo and use any compatible autoloader.
