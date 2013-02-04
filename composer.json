@@ -3,7 +3,7 @@
     "type":         "library",
     "description":  "Wrapper for HighCharts js charting lib",
     "keywords":     ["highcharts", "charts"],
-    "homepage":     "https://github.com/petesiss/PhpHc",
+    "homepage":     "https://github.com/petesiss/phphc",
     "authors":      [
         {
             "name":     "Pete Sisson",
