@@ -1,4 +1,4 @@
-#WIP lib to help build Highcharts
+# WIP php lib for Highcharts [![Build Status](https://travis-ci.org/petesiss/phphc.png)](https://travis-ci.org/petesiss/phphc)
 
 Wrapper for highcharts js lib, allowing for easy config of charts via php arrays.
 
