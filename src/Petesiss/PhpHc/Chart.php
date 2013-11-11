@@ -627,13 +627,15 @@ class Chart implements ChartInterface
      *
      * @param string $name   series name
      * @param array  $data series values
+     * @param integer $yAxis The unique yAxis object associated with the series
+     * @param string  $type The series' type, like "line", "area" etc
      *
      * @return ChartInterface
      */
-    public function addSeries($name, $data)
+    public function addSeries($name, $data, $yAxis=0, $type="")
     {
         $series = $this->series;
-        $new = array('name' => $name, 'data' => $data);
+        $new = array('name' => $name, 'data' => $data, 'yAxis' => $yAxis, 'type' => $type);
         $series[] = $new;
         $this->series = $series;
 
