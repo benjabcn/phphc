@@ -10,11 +10,13 @@ class Renderer
      * Produces html / js to render a given ChartInterface $chart
      *
      * @param ChartInterface $chart
+     * @param String $renderName
      * @return string
      */
-    public function render(ChartInterface $chart)
+    public function render(ChartInterface $chart, $renderName="")
     {
-        $html = "<script type=\"text/javascript\">var chart;$(document).ready(function() {chart = new Highcharts.Chart(".$chart->getJson().");});</script>";
+        if($renderName=="") $renderName="chart";
+        $html = "<script type=\"text/javascript\">var ".$renderName.";$(document).ready(function() {".$renderName." = new Highcharts.Chart(".$chart->getJson().");});</script>";
 
         return $html;
     }
